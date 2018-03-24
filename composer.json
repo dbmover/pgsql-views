@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dbmover\\PgsqlViews\\": "./src"
+            "Dbmover\\Pgsql\\Views\\": "./src"
         }
     }
 }
