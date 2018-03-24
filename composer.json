@@ -1,0 +1,20 @@
+{
+    "name": "dbmover/pgsql-views",
+    "description": "Postgresql views, also handles materialized views.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marijn Ophorst",
+            "email": "marijn@monomelodies.nl"
+        }
+    ],
+    "require": {
+        "dbmover/views": "^0.6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dbmover\\PgsqlViews\\": "./src"
+        }
+    }
+}
