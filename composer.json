@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "php": ">=7.2",
         "dbmover/views": "^0.6.4"
     },
     "autoload": {
