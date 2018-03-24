@@ -1,6 +1,6 @@
 <?php
 
-namespace Dbmover\PgsqlViews;
+namespace Dbmover\Pgsql\Views;
 
 use Dbmover\Views;
 
