@@ -4,28 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "94246445a4553bd8b07ae8705c840cde",
-    "content-hash": "22f725533476a4095d2400a905f9e1f7",
+    "hash": "9d80025ad0f77cfb8ca10a72a3f42e7c",
+    "content-hash": "6a9c85a3951876b80cc5924042892884",
     "packages": [
         {
             "name": "dbmover/core",
-            "version": "0.6.4",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/core.git",
-                "reference": "1004548418b7652227221599828ccb6950ffe475"
+                "reference": "b94862d0a6f24ff7be859b3187cddbe52513fcc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/core/zipball/1004548418b7652227221599828ccb6950ffe475",
-                "reference": "1004548418b7652227221599828ccb6950ffe475",
+                "url": "https://api.github.com/repos/dbmover/core/zipball/b94862d0a6f24ff7be859b3187cddbe52513fcc3",
+                "reference": "b94862d0a6f24ff7be859b3187cddbe52513fcc3",
                 "shasum": ""
             },
             "require": {
-                "monomelodies/kingconf": "^1.1"
+                "monomelodies/kingconf": "^1.1",
+                "php": ">=7.2"
             },
             "require-dev": {
-                "gentry/gentry": "^0.10.2"
+                "gentry/gentry": "^0.13.0",
+                "gentry/toast": "^0.1.0",
+                "toast/unit": "^1.3"
             },
             "bin": [
                 "bin/dbmover"
@@ -47,24 +50,25 @@
                 }
             ],
             "description": "PHP-based database versioning tool, core components",
-            "time": "2017-04-29 08:32:12"
+            "time": "2018-03-24 07:05:17"
         },
         {
             "name": "dbmover/views",
-            "version": "0.6.4",
+            "version": "0.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/views.git",
-                "reference": "8679fa7065b3804906cae0b8f0bc87205c10709f"
+                "reference": "f4efbcca5f44c7d847e0e50a86497f59013b1d46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/views/zipball/8679fa7065b3804906cae0b8f0bc87205c10709f",
-                "reference": "8679fa7065b3804906cae0b8f0bc87205c10709f",
+                "url": "https://api.github.com/repos/dbmover/views/zipball/f4efbcca5f44c7d847e0e50a86497f59013b1d46",
+                "reference": "f4efbcca5f44c7d847e0e50a86497f59013b1d46",
                 "shasum": ""
             },
             "require": {
-                "dbmover/core": "^0.6.1"
+                "dbmover/core": "^0.7.0",
+                "php": ">=7.2"
             },
             "type": "library",
             "autoload": {
@@ -83,7 +87,7 @@
                 }
             ],
             "description": "Dbmover plugin to (re)create all views",
-            "time": "2017-05-04 11:35:58"
+            "time": "2018-03-24 07:43:45"
         },
         {
             "name": "monomelodies/kingconf",
@@ -200,6 +204,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.2"
+    },
     "platform-dev": []
 }
