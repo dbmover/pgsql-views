@@ -20,7 +20,7 @@ class Plugin extends Views\Plugin
             }
         }
         $stmt = $this->loader->getPdo()->prepare("SELECT matviewname FROM pg_matviews");
-        $stmt->execute([$this->loader->getDatabase(), $this->loader->getDatabase()]);
+        $stmt->execute();
         while (false !== ($view = $stmt->fetchColumn())) {
             if (!$this->loader->shouldBeIgnored($view)) {
                 $this->addOperation("DROP MATERIALIZED VIEW $view;");
