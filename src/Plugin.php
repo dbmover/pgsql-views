@@ -23,7 +23,7 @@ class Plugin extends Views\Plugin
         $stmt->execute();
         while (false !== ($view = $stmt->fetchColumn())) {
             if (!$this->loader->shouldBeIgnored($view)) {
-                $this->addOperation("DROP MATERIALIZED VIEW $view;");
+                $this->addOperation("DROP MATERIALIZED VIEW IF EXISTS $view;");
             }
         }
         return $sql;
